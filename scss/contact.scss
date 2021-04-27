@@ -1,0 +1,90 @@
+.contact_section_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 22vmax;
+    background-color: lighten($second-color, 10%);
+    color: black;
+
+
+    &_h1 {
+        font-size: 3rem;
+        margin-top: 4vh; //-height header
+
+    }
+
+    &_h2 {
+        font-size: $font-size-subtitle;
+        width: 30%;
+        margin-top: 15px;
+
+    }
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+
+    @include margin-screen;
+
+    &_form,
+    &_section_infos {
+        border: none;
+        //border: 3px solid lighten($second-color, 10%);
+        //border: 6px solid lighten($thurd-color, 60%);
+        box-shadow: 1px 2px 10px -2px rgb(177, 176, 176);
+        border-radius: 1em;
+        padding: 2vw;
+        margin: 2vw;
+
+        font-size: $font-size-contact;
+
+        &_group {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            align-items: space-around;
+            //text-transform: uppercase;
+
+            input,
+            textarea {
+                padding: 20px;
+                margin: 5px;
+                // &:active{
+                border: 1px solid lighten($second-color, 15%);
+                border-radius: 1em;
+                box-shadow: -1px 2px 8px -1px lighten($second-color, 15%)inset;
+                background-color: lighten($second-color, 25%) ;
+
+            }
+        }
+
+        &_title,
+        .contact_section_infos_title {
+            font-size: $font-size-title;
+            color: $second-color;
+
+        }
+
+    }
+
+}
+
+.contact_form_button {
+    font-size: $font-size-subtitle;
+    text-transform: uppercase;
+    background-color: lighten($second-color, 5%);
+    display: flex;
+    justify-content: center;
+    padding: 15px 25px 15px 25px;
+    border-radius: 1em;
+    box-shadow: 1px 2px 10px -2px rgb(177, 176, 176);
+
+    border: none;
+
+    color: #ffff;
+    margin: auto;
+}

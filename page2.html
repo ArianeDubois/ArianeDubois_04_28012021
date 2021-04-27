@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visible sur internet">
+    <meta name="title" content="La chouette agence">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Facebook open graph -->
+    <meta property="og:title" content="La chouette agence">
+    <meta property="og:type" content="website">
+    <meta property="og:description"
+        content="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visible sur internet">
+    <!-- twitter cards -->
+    <meta name="twitter:title" content="la chouette agence">
+    <meta name="twitter:description"
+        content="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visible sur internet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- ajouter favicon -->
+
+    <title>La chouette agence</title>
+    <!-- ajouter async ou defer -->
+    <script src="https://kit.fontawesome.com/580be775ae.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header><img class="logo" src="./img/la-chouette-agence.png"
+            alt="logo de l'agence representant une chouette vectorisée">
+        <ul class="navigation">
+            <li class=" navigation_acceuil button"><a href="index.html"> Acceuil</a>
+            </li>
+            <li class=" navigation_contact focus">Contact
+            </li>
+        </ul>
+    </header>
+    <!-- section TITLE -->
+    <section class="contact_section_title">
+        <h1 class="contact_section_title_h1">Parlons web design !</h1>
+        <h2 class="contact_section_title_h2">Nous sommes ravis que vous souhaitiez collaborer avec notre agence.
+            Parlez-nous de votre projet en complétant le formulaire ci-dessous.</h2>
+    </section>
+
+    <main class="contact">
+        <!-- section FORMULAIRE -->
+        <form method="post" action="traitement.php">
+
+            <fieldset class="contact_form">
+                <legend class="contact_form_title">Contact</legend>
+                <p class="contact_form_group">
+                    <label for="name">Votre nom</label>
+                    <input type="text" name="name" id="name" required />
+                </p>
+                <p class="contact_form_group">
+                    <label for="mail">Votre adresse mail</label>
+                    <input type="email" name="mail" id="mail" required />
+                </p>
+                <p class="contact_form_group">
+                    <label for="input_504">Comment nous avez-vous connu ? </label>
+                    <input type="text" name="answer" id="input_504" rows="4" cols="50" required>
+                </p>
+
+                <p class="contact_form_group">
+                    <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
+                    <textarea name="message" id="message" required> </textarea>
+                </p>
+
+                <button class="contact_form_button" type="submit">
+                    Envoyer
+                </button>
+            </fieldset>
+        </form>
+        <!-- end of formulaire -->
+
+        <!-- section INFOS -->
+        <section class="contact_section">
+            <fieldset class="contact_section_infos">
+                <legend class="contact_section_infos_title"> Infos</legend>
+            <ul>
+                <li class="contact_section_infos_content">contact@lachouetteagence.com</li>
+                <li class="contact_section_infos_content">2 place Sathonay 69001 Lyon</li>
+                <li class="contact_section_infos_content">Ouvert de 9h à 18h, du lundi au vendredi</li>
+      </ul>
+            </fieldset>
+        </section> <!-- end of section infos -->
+
+    </main>
+
+    <footer>
+        <h2 class="footer_text">La chouette agence - Agence web basée à Lyon.</h2>
+
+        <div class="footer_socialnetwork">
+
+            <figure class="footer_socialnetwork_bloc">
+                <div class="footer_socialnetwork_bloc_icone"><i class="fab fa-twitter"></i></div>
+                <div class="footer_socialnetwork_bloc_caption">Twitter</div>
+            </figure>
+            <figure class="footer_socialnetwork_bloc">
+                <div class="footer_socialnetwork_bloc_icone">
+                    <i class="fab fa-facebook-f"></i></div>
+                <div class="footer_socialnetwork_bloc_caption">Facebook</div>
+            </figure>
+            <figure class="footer_socialnetwork_bloc">
+                <div class="footer_socialnetwork_bloc_icone">
+                    <i class="fab fa-instagram-square"></i></div>
+                <div class="footer_socialnetwork_bloc_caption">Instagram</div>
+            </figure>
+            <figure class="footer_socialnetwork_bloc">
+                <div class="footer_socialnetwork_bloc_icone">
+                    <i class="fas fa-basketball-ball"></i></div>
+                <div class="footer_socialnetwork_bloc_caption">Dribble</div>
+            </figure>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

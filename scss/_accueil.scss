@@ -9,13 +9,13 @@
     align-items: center;
     flex-direction: column;
     font-size: $font-size-title;
-    color:$second-color;
+    color: $second-color;
     filter: contrast(1.3);
 
- 
-    h1{
+
+    h1 {
         z-index: 5;
-        color:lighten($main-color,20%);
+        color: lighten($main-color, 20%);
     }
 
     &::before {
@@ -41,7 +41,7 @@
 
     &_title {
         font-size: $font-size-title;
-        color:$second-color;
+        color: $second-color;
 
         //color: $main-color;
 
@@ -50,14 +50,14 @@
     &_categories {
         display: flex;
         justify-content: space-between;
-        margin: $vertical-margin 0 $vertical-margin 0;
+        margin: $vertical-margin 0 45px 0;
         font-size: $font-size-subtitle;
 
     }
 
     &_quote_text {
         width: 70%;
-     margin: 2vw auto auto auto;
+        margin: 2vw auto auto auto;
         font-size: $font-size-quote;
 
     }
@@ -74,13 +74,14 @@
 .section_presentation_categories_strategie,
 .section_presentation_categories_webdesign,
 .section_presentation_categories_illustrations {
-    width: 25%;
+    width: 30%;
 
-    &_icone{
+    &_icone {
         font-size: 4rem;
-        color: lighten($main-color,20%);
+        color: lighten($main-color, 20%);
         margin-bottom: 30px;
     }
+
     &_title {
         font-size: $font-size-subtitle;
         text-transform: uppercase;
@@ -96,37 +97,38 @@
 // section texte
 
 .section_text {
-   background-color:lighten($second-color,10%);
-   //border-top: 4px solid black;
-   padding: $vertical-margin 25vw $vertical-margin 25vw;
-   box-shadow: 1px 1px 20px -10px rgb(73, 73, 73);
-&_img {
-    background: url("../img/image-de-presentation.bmp") no-repeat;
-    background-size: cover;
-    height: 20vw;
-    position: relative;
-    filter: contrast(1.5);
-    margin-bottom: $vertical-margin;
+    //border-top: 4px solid black;
+    padding: $vertical-margin 25vw $vertical-margin 25vw;
+    box-shadow: 1px 1px 20px -10px rgb(73, 73, 73);
+    background-color:lighten($second-color,10%);
 
+    &_img {
+        background: url("../img/image-de-presentation.bmp") no-repeat;
+        background-size: cover;
+        height: 20vw;
+        position: relative;
+        filter: contrast(1.5);
+        margin-bottom: $vertical-margin;
 
-&::before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    mix-blend-mode: hue;
-}
-}
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            mix-blend-mode: hue;
+        }
+    }
+
 
     &_main {
         font-size: $font-size-quote;
 
         &_indentation {
             padding: 45px;
-     
+
         }
     }
 }
@@ -143,17 +145,17 @@
     &_title {
         text-align: center;
         font-size: $font-size-title;
-        color:$second-color;
+        color: $second-color;
 
     }
 
-    &_name{
+    &_name {
         font-size: $font-size-subtitle;
         text-align: center;
         margin-bottom: 15px;
     }
 
-    &_text{
+    &_text {
         font-size: $font-size-standart;
     }
 
@@ -165,7 +167,7 @@
 
     figure {
         margin: 3vw;
-        width: 20vw;
+        width: 18vw;
 
         img {
             width: 100%;

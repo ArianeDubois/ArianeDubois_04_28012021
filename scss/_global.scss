@@ -22,7 +22,7 @@ header {
 
     .logo {
         padding: 0.5vw 2vw 0.5vw 2vw;
-        height: 3vw;
+        height: 4vh;
     }
 
     .navigation {
@@ -81,6 +81,9 @@ footer {
         &_bloc {
             flex-direction: column;
             margin: 15px;
+            &_icone{
+                font-size: 1.5rem;
+            }
         }
     }
 

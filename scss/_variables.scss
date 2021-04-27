@@ -1,0 +1,15 @@
+
+
+$main-color: rgb(255, 94, 0);
+$second-color: lighten(rgb(40, 40, 255),15%);
+$thurd-color: grey;
+//$thurd-color: rgb(233, 233, 235);
+
+$vertical-margin: 50px;
+
+
+
+
+@mixin margin-screen {
+    margin: $vertical-margin 22vw  $vertical-margin 22vw;
+}

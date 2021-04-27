@@ -1,0 +1,171 @@
+.section_title {
+    background: url("../img/la-chouette-agence-banniere.jpg"), no-repeat;
+    //  background: url("../img/la-chouette-agence-banniere.jpg"), no-repeat;
+    background-size: cover;
+    height: 32vmax;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: $font-size-title;
+    color:$second-color;
+ 
+    h1{
+        z-index: 5;
+        color:lighten($main-color, 22%);
+    }
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $main-color;
+        mix-blend-mode: hue;
+    }
+}
+
+// section presentation
+
+.section_presentation {
+    @include margin-screen;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    &_title {
+        font-size: $font-size-title;
+        color:$second-color;
+
+        //color: $main-color;
+
+    }
+
+    &_categories {
+        display: flex;
+        justify-content: space-between;
+        margin: $vertical-margin 0 $vertical-margin 0;
+        font-size: $font-size-subtitle;
+
+    }
+
+    &_quote_text {
+        width: 70%;
+     margin: auto;
+        font-size: $font-size-quote;
+
+    }
+
+    &_quote_caption {
+        font-size: $font-size-standart;
+        margin-top: 15px;
+
+    }
+}
+
+
+
+.section_presentation_categories_strategie,
+.section_presentation_categories_webdesign,
+.section_presentation_categories_illustrations {
+    width: 25%;
+
+    &_title {
+        font-size: $font-size-subtitle;
+        text-transform: uppercase;
+
+
+    }
+
+    &_text {
+        font-size: $font-size-standart;
+        text-align: left;
+
+    }
+
+}
+
+// section texte
+
+.section_text {
+   background-color:lighten($second-color,10%);
+   //border-top: 4px solid black;
+   padding: $vertical-margin 25vw $vertical-margin 25vw;
+   box-shadow: 1px 1px 20px -10px rgb(73, 73, 73);
+&_img {
+    background: url("../img/image-de-presentation.bmp") no-repeat;
+    background-size: cover;
+    height: 20vw;
+    position: relative;
+    margin-bottom: $vertical-margin;
+
+
+&::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $thurd-color;
+    mix-blend-mode: hue;
+}
+}
+
+    &_main {
+        font-size: $font-size-quote;
+
+        &_indentation {
+            padding: 45px;
+     
+        }
+    }
+}
+
+
+
+//section projets 
+
+.section_project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include margin-screen;
+
+    &_title {
+        text-align: center;
+        font-size: $font-size-title;
+        color:$second-color;
+
+    }
+
+    &_name{
+        font-size: $font-size-subtitle;
+        text-align: center;
+
+    }
+
+    &_text{
+        font-size: $font-size-standart;
+    }
+
+    &_figure {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    figure {
+        margin: 3vw;
+        width: 18vw;
+
+        img {
+            width: 100%;
+        }
+
+    }
+}

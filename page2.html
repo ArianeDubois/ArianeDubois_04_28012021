@@ -23,6 +23,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 
+    <!--favicon -->
+    <link rel="icon" type="image/png" href="./favicon.jpg" />
+
     <!-- ajouter favicon -->
 
     <title>La chouette agence</title>
@@ -32,8 +35,8 @@
 </head>
 
 <body>
-    <header><img class="logo" src="./img/la-chouette-agence.png"
-            alt="logo de l'agence representant une chouette vectorisée">
+    <header><a href="index.html"><img class="logo" src="./img/la-chouette-agence.png"
+            alt="logo de l'agence representant une chouette vectorisée"></a>
         <ul class="navigation">
             <li class=" navigation_acceuil button"><a href="index.html"> Acceuil</a>
             </li>
@@ -64,7 +67,7 @@
                 </p>
                 <p class="contact_form_group">
                     <label for="input_504">Comment nous avez-vous connu ? </label>
-                    <input type="text" name="answer" id="input_504" rows="4" cols="50" required>
+                    <input type="text" name="answer" id="input_504" required>
                 </p>
 
                 <p class="contact_form_group">
@@ -80,7 +83,7 @@
         <!-- end of formulaire -->
 
         <!-- section INFOS -->
-        <section class="contact_section">
+        <div class="contact_section">
             <fieldset class="contact_section_infos">
                 <legend class="contact_section_infos_title"> Infos</legend>
             <ul>
@@ -89,7 +92,7 @@
                 <li class="contact_section_infos_content">Ouvert de 9h à 18h, du lundi au vendredi</li>
       </ul>
             </fieldset>
-        </section> <!-- end of section infos -->
+        </div> <!-- end of section infos -->
 
     </main>
 

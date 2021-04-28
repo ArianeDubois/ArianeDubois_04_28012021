@@ -11,6 +11,8 @@ a {
     text-decoration: none;
 }
 
+
+
 header {
     display: flex;
     width: 100%;
@@ -20,20 +22,37 @@ header {
     z-index: 10;
     box-shadow: 1px 1px 20px -10px rgb(196, 195, 195);
 
-    .logo {
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .logo  {
         padding: 0.5vw 2vw 0.5vw 2vw;
-        height: 4vh;
+        height: 4vmin; // revoir cete valeur 4vh
+        width: auto;
+
+        @include mobile {
+            height: 8vmin;
+            margin: auto;
+        }
     }
 
     .navigation {
         display: flex;
-        justify-content: space-around;
-        width: 15%;
+        justify-content: space-between;
+        width: 22%;
         flex-direction: flex-end;
         align-items: center;
         text-transform: uppercase;
         font-size: $font-size-standart;
         padding: 0.8vw 2vw 0.7vw 2vw;
+        @include tablette {
+            width: 35%;
+        }
+        @include mobile {
+            width:97%;
+        }
 
     }
 }
@@ -58,7 +77,7 @@ header {
 
 footer {
     // background-color: lighten($main-color, 15%);
-    background-color: lighten($second-color,10%);
+    background-color: lighten($second-color, 10%);
 
     box-shadow: 1px 1px 2px 1px rgb(196, 195, 195);
     color: black;
@@ -66,6 +85,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include tablette {
+        flex-direction: column;
+
+    }
 
     .footer_text {
         font-size: $font-size-standart;
@@ -81,7 +105,8 @@ footer {
         &_bloc {
             flex-direction: column;
             margin: 15px;
-            &_icone{
+
+            &_icone {
                 font-size: 1.5rem;
             }
         }

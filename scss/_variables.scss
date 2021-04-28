@@ -1,15 +1,64 @@
 
 
 $main-color: rgb(255, 94, 0);
-$second-color: lighten(rgb(40, 40, 255),15%);
+
+//$second-color: lighten(rgb(40, 40, 255),15%);
+//$second-color: rgb(123, 104, 238);
+$second-color: lighten(rgb(255, 94, 0),3%);
+
 $thurd-color: grey;
 //$thurd-color: rgb(233, 233, 235);
 
 $vertical-margin: 65px;
 
 
-
+//margin
 
 @mixin margin-screen {
     margin: $vertical-margin 22vw  $vertical-margin 22vw;
 }
+
+@mixin margin-tablette {
+    margin: 50px 10vw  50px 10vw;
+}
+
+@mixin margin-mobile {
+    margin: 30px 5vw  30px 5vw;
+}
+
+
+//responsive
+@mixin small-screen{
+    @media screen and (max-width: 1200px)
+    {
+        @content;
+    }
+    }
+    
+    
+    @mixin tablette{
+        @media screen and (max-width: 900px)
+        {
+            @content;
+        }
+        }
+    
+    
+    @mixin mobile{
+        @media screen and (max-width: 600px)
+        
+        {           
+            @content;
+        }
+        }
+
+
+           
+    @mixin small-mobile{
+        @media screen and (max-width: 300px)
+        
+        {           
+            @content;
+        }
+        }
+

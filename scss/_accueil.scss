@@ -1,8 +1,11 @@
 .section_title {
-    background: url("../img/la-chouette-agence-banniere.jpg"), no-repeat;
+    background: url("../img/la-chouette-agence-banniere.jpg");
+    background-repeat: no-repeat; ;
     //  background: url("../img/la-chouette-agence-banniere.jpg"), no-repeat;
     background-size: cover;
-    height: 32vmax;
+    background-attachment: fixed;
+    background-position: bottom 33vh right 0px;
+    min-height: 32vmax;
     position: relative;
     display: flex;
     justify-content: center;
@@ -10,12 +13,33 @@
     flex-direction: column;
     font-size: $font-size-title;
     color: $second-color;
-    filter: contrast(1.3);
+    filter: contrast(1.1) brightness(1.5);
+
+    @include tablette {
+        background-attachment: scroll;
+        background-position: center;
+
+    }
+
 
 
     h1 {
-        z-index: 5;
-        color: lighten($main-color, 20%);
+        // z-index: 5;
+        // color: lighten($main-color, 15%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: black;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 0.5em;
+        padding: 15px;
+        box-shadow: 1px 1px 20px -10px rgb(49, 49, 49);
+        font-size: $font-size-title;
+
+        img {
+            width: 30%;
+        }
     }
 
     &::before {
@@ -33,11 +57,24 @@
 // section presentation
 
 .section_presentation {
-    @include margin-screen;
     display: flex;
     flex-direction: column;
 
     text-align: center;
+    @include margin-screen;
+
+    @include small-screen {
+        @include margin-tablette;
+    }
+
+
+    @include mobile {
+        @include margin-mobile
+    }
+
+   
+
+
 
     &_title {
         font-size: $font-size-title;
@@ -50,8 +87,12 @@
     &_categories {
         display: flex;
         justify-content: space-between;
-        margin: $vertical-margin 0 45px 0;
+        margin-bottom:45px ;
         font-size: $font-size-subtitle;
+        @include mobile {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
 
     }
 
@@ -59,6 +100,10 @@
         width: 70%;
         margin: 2vw auto auto auto;
         font-size: $font-size-quote;
+        @include mobile {
+            width: 100%;
+
+        }
 
     }
 
@@ -75,16 +120,22 @@
 .section_presentation_categories_webdesign,
 .section_presentation_categories_illustrations {
     width: 30%;
+    @include mobile {
+        width: 90%;
+    }
 
     &_icone {
         font-size: 4rem;
-        color: lighten($main-color, 20%);
+        color: lighten($second-color, 10%);
         margin-bottom: 30px;
+        margin-top: 30px;
+
     }
 
     &_title {
         font-size: $font-size-subtitle;
         text-transform: uppercase;
+        margin-bottom:10px;
     }
 
     &_text {
@@ -98,17 +149,24 @@
 
 .section_text {
     //border-top: 4px solid black;
-    padding: $vertical-margin 25vw $vertical-margin 25vw;
     box-shadow: 1px 1px 20px -10px rgb(73, 73, 73);
-    background-color:lighten($second-color,10%);
+    background-color: lighten($second-color, 10%);
 
     &_img {
         background: url("../img/image-de-presentation.bmp") no-repeat;
         background-size: cover;
-        height: 20vw;
+        background-attachment: fixed;
+        background-position: center;
+
+        @include tablette {
+            background-attachment: scroll;
+        }
+
+        height: 25vmax;
         position: relative;
-        filter: contrast(1.5);
+        filter: contrast(0.9) brightness(1.1);
         margin-bottom: $vertical-margin;
+        
 
         &::before {
             content: "";
@@ -117,7 +175,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            background-color: black;
+            background-color: $main-color;
             mix-blend-mode: hue;
         }
     }
@@ -125,6 +183,16 @@
 
     &_main {
         font-size: $font-size-quote;
+        padding: 10px 25vw $vertical-margin 25vw;
+    
+
+        @include small-screen {
+            padding: 0 10vw  30px 10vw;
+        }
+        @include mobile {
+            padding: 0 5vw  30px 5vw;
+        }
+
 
         &_indentation {
             padding: 45px;
@@ -141,6 +209,17 @@
     flex-direction: column;
     justify-content: space-around;
     @include margin-screen;
+   
+
+
+    @include small-screen {
+        @include margin-tablette;
+    }
+
+    @include mobile {
+        @include margin-mobile
+    }
+
 
     &_title {
         text-align: center;
@@ -153,10 +232,13 @@
         font-size: $font-size-subtitle;
         text-align: center;
         margin-bottom: 15px;
+
     }
 
     &_text {
         font-size: $font-size-standart;
+        margin-top: 15px;
+
     }
 
     &_figure {
@@ -168,6 +250,17 @@
     figure {
         margin: 3vw;
         width: 18vw;
+        @include small-screen {
+            margin: 5vw;
+            width: 30vw;
+
+        }
+
+        @include mobile {
+            margin: 3vw;
+            width: 100%;
+
+        }
 
         img {
             width: 100%;

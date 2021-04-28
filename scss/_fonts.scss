@@ -1,11 +1,27 @@
-body {
+html {
     font-family: 'Lato', sans-serif;
     font-size: 62.5%; //10px
+    @include small-screen {
+        font-size: 60%; 
+    }
+
+    @include tablette {
+        font-size: 55%; 
+
+    }
+
+    @include small-mobile {
+        font-size: 40%; 
+
+    }
+
+
 }
 
 // fonts
-$font-size-title: 2.6rem;
-$font-size-standart: 1.4rem;
-$font-size-quote: 1.8rem;
-$font-size-subtitle: 1.7rem;
+$font-size-title: 2.8rem;
+$font-size-standart: 1.6rem;
+$font-size-quote: 2.1rem;
+$font-size-subtitle: 1.9rem;
 $font-size-contact: 1.6rem;
+

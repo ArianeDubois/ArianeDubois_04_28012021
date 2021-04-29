@@ -27,13 +27,13 @@ header {
         justify-content: space-around;
     }
 
-    .logo  {
+    .logo{
         padding: 0.5vw 2vw 0.5vw 2vw;
-        height: 4vmin; // revoir cete valeur 4vh
+        height: 50px; // revoir cete valeur 4vh
         width: auto;
 
         @include mobile {
-            height: 8vmin;
+            height: 20px;
             margin: auto;
         }
     }

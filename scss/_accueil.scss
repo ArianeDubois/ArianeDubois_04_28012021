@@ -1,5 +1,5 @@
 .section_title {
-    background: url("./img/la-chouette-agence-banniere-1920x785.jpg");
+    background: url("./img/la-chouette-agence-banniere-1920x785.webp");
     background-repeat: no-repeat;
     //  background: url("../img/la-chouette-agence-banniere.jpg"), no-repeat;
     background-size: cover;
@@ -38,7 +38,8 @@
         font-size: $font-size-title;
 
         img {
-            width: 30%;
+            width: 20%;
+            height: auto;
         }
     }
 
@@ -153,7 +154,7 @@
     background-color: lighten($second-color, 10%);
 
     &_img {
-        background: url("./img/creativity1920x1080.jpg") no-repeat;
+        background: url("./img/creativity1920x1080.wepb") no-repeat;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;

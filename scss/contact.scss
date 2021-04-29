@@ -5,7 +5,7 @@
     align-items: center;
     margin: auto;
     height: 18vw;
-    background-color: lighten($second-color, 10%);
+    background-color: $main-color;
     color: black;
     @include small-screen {
         height: 30vw;
@@ -22,10 +22,6 @@
     &_h1 {
         font-size: 3rem;
         margin-top: 4vh; //-height header
-        @include mobile {
-            margin-top: 8vh;
-        }
-
     }
 
     &_h2 {
@@ -40,9 +36,7 @@
         @include mobile {
             width: 90%;
         }
-
     }
-
 }
 
 .contact {
@@ -68,59 +62,49 @@
     &_form,
     &_section_infos {
         border: none;
-        //border: 3px solid lighten($second-color, 10%);
-        //border: 6px solid lighten($thurd-color, 60%);
-        box-shadow: 1px 2px 10px -2px rgb(177, 176, 176);
-        border-radius: 1em;
-        padding: 1.2vmax;
-        margin: 2vw;
-
         font-size: $font-size-contact;
 
         &_group {
             display: flex;
             flex-direction: column;
-            margin: 3vw;
+             margin-bottom: 1.5vw;
             align-items: space-around;
-            //text-transform: uppercase;
-
+    
             input,
             textarea {
-                padding: 20px;
+                padding: 15px;
                 margin: 5px;
                 // &:active{
                 border: none;
-                // border: 1px solid lighten($second-color, 15%);
                 border-radius: 0.5em;
-                box-shadow: -1px 2px 8px -1px lighten($second-color, 20%)inset;
-                background-color: lighten($second-color, 43%);
+                box-shadow: -1px 2px 8px -1px lighten($thurd-color, 30%)inset;
+                // background-color: lighten($thurd-color, 48%);
 
             }
         }
 
         &_title,
         .contact_section_infos_title {
+            margin: 5px;
+
             font-size: $font-size-title;
             color: $second-color;
-
+            text-align: center;
         }
-
     }
-
 }
 
 .contact_form_button {
-    font-size: $font-size-subtitle;
+    font-size: $font-size-standart;
     text-transform: uppercase;
-    background-color: lighten($second-color, 5%);
+    background-color: $main-color;
     display: flex;
     justify-content: center;
     padding: 15px 25px 15px 25px;
-    border-radius: 1em;
+    margin-bottom: 60px;
+    border-radius: 1.5em;
     box-shadow: 1px 2px 10px -2px rgb(177, 176, 176);
 
     border: none;
-
-    color: #ffff;
     margin: auto;
 }

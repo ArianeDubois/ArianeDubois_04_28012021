@@ -11,59 +11,49 @@ a {
     text-decoration: none;
 }
 
-
-
 header {
     display: flex;
     width: 100%;
     position: fixed;
+    top:0;
     justify-content: space-between;
     background-color: #ffff;
     z-index: 10;
     box-shadow: 1px 1px 20px -10px rgb(196, 195, 195);
 
-    @include mobile {
-        flex-direction: column;
-        justify-content: space-around;
-    }
+  
 
     .logo{
         padding: 0.5vw 2vw 0.5vw 2vw;
-        height: 50px; // revoir cete valeur 4vh
+        height: 45px; // revoir cete valeur 4vh
         width: auto;
 
         @include mobile {
             height: 35px;
-            margin: auto;
-        }
+ }
     }
 
     .navigation {
         display: flex;
         justify-content: space-between;
-        width: 22%;
+        width: 100%;
         flex-direction: flex-end;
         align-items: center;
         text-transform: uppercase;
         font-size: $font-size-standart;
-        padding: 0.8vw 2vw 0.7vw 2vw;
-        @include tablette {
-            width: 35%;
-        }
-        @include mobile {
-            width:97%;
-        }
+        padding: 0.6vw 2vw 0.6vw 2vw;
 
+   
     }
 }
 
 .button {
     //background: linear-gradient($main-color, lighten($main-color, 20%));
-    background-color: $second-color;
+    background-color: $main-color;
     box-shadow: 1px 1px 2px 1px rgb(196, 195, 195);
     padding: 10px 15px 10px 15px;
     border-radius: 2em;
-    color: white;
+  
 }
 
 .focus {
@@ -71,13 +61,11 @@ header {
     padding: 10px 15px 10px 15px;
     border-radius: 2em;
     background-color: lighten(rgb(238, 238, 238), 5%);
-
 }
-
 
 footer {
     // background-color: lighten($main-color, 15%);
-    background-color: lighten($second-color, 10%);
+    background-color: $main-color;
 
     box-shadow: 1px 1px 2px 1px rgb(196, 195, 195);
     color: black;

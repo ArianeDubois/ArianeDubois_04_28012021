@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="la chouette agence">
     <meta name="twitter:description"
         content="La chouette agence est une agence de web design qui aide les entreprises à devenir attractives et visible sur internet">
-  
+
     <link rel="stylesheet" href="./style.css">
 
 
@@ -33,22 +33,21 @@
 </head>
 
 <body>
-    <header><img class="logo" src="./img/la-chouette-agence.png"
-            alt="logo de l'agence representant une chouette vectorisée">
-        <ul class="navigation">
-            <li class=" navigation_acceuil focus"> Acceuil
-            </li>
-            <li class=" navigation_contact button"><a href="page2.html">Contact</a>
-            </li>
-        </ul>
+    <header>
+        <div class="navigation">
+            <img class="logo" src="./img/la-chouette-agence.png"
+                alt="logo de l'agence representant une chouette vectorisée">
+
+            <span class=" navigation_contact button"><a href="page2.html">Contact</a></span>
+
+        </div>
     </header>
     <!-- SECTION TITLE -->
     <section class="section_title">
-
-        <h1>
-            <img class="section_title_logo" src="./img/logo.png" alt="chouette orange vecorisée sur fond noir">
-            La chouette agence</h1>
-
+        <div class="section_title_card">
+            <h1> <img class="section_title_card_logo" src="./img/logo.png" alt="chouette orange vecorisée sur fond noir">
+                La chouette agence</h1>
+        </div>
     </section>
 
     <!-- SECTION PRESENTATION -->
@@ -57,7 +56,6 @@
             à devenir attractives et visibles sur internet
         </h2>
         <div class=" section_presentation_categories">
-            <!-- logo_1 -->
 
             <div class="section_presentation_categories_webdesign">
                 <div class="section_presentation_categories_webdesign_icone"><span class="et-icon-browser"></span></div>
@@ -66,18 +64,20 @@
                     rafraîchissement
                     ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</h4>
             </div>
-            <!-- logo_2 -->
+
             <div class="section_presentation_categories_strategie">
-                <div class="section_presentation_categories_strategie_icone"><span class="et-icon-presentation"></span></div>
+                <div class="section_presentation_categories_strategie_icone"><span class="et-icon-presentation"></span>
+                </div>
                 <h3 class="section_presentation_categories_strategie_title">Strategie</h3>
                 <h4 class="section_presentation_categories_strategie_text">Plutôt que de suggérer des designs à la mode,
                     nous
                     travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur
                     design possible</h4>
             </div>
-            <!-- logo_3 -->
+
             <div class="section_presentation_categories_illustrations">
-                <div class="section_presentation_categories_illustrations_icone"><span class="et-icon-edit"></span></div>
+                <div class="section_presentation_categories_illustrations_icone"><span class="et-icon-edit"></span>
+                </div>
                 <h3 class="section_presentation_categories_illustrations_title">Illustrations</h3>
                 <h4 class="section_presentation_categories_illustrations_text">Un bon design n'est rien sans de bonnes
                     illustrations.
@@ -124,10 +124,11 @@
             <figure class="projet1">
                 <h3 class="section_project_name">REFONTE D'UN SITE WEB POUR UN JOURNAL LOCAL</h3>
                 <picture>
-                    <source srcset="./img/book-500.jpg 500w, ./img/book-260.jpg 260w, ./img/book-375.jpg 375w"  sizes="18vw" type="image/jpg">
+                    <source srcset="./img/book-500.jpg 500w, ./img/book-260.jpg 260w, ./img/book-375.jpg 375w"
+                        sizes="18vw" type="image/jpg">
                     <img class="section_project_img" src="./img/book-500.webp"
-                        srcset="./img/book-500.webp 500w, ./img/book-260.webp 260w,  ./img/book-375.webp 375w" sizes="18vw"
-                        alt="emplilement de magazines colorés ouvert">
+                        srcset="./img/book-500.webp 500w, ./img/book-260.webp 260w,  ./img/book-375.webp 375w"
+                        sizes="18vw" alt="emplilement de magazines colorés ouvert">
                 </picture>
 
                 <figcaption class="section_project_text">Nous avons créé une nouvelle identité visuelle pour un journal
@@ -140,7 +141,7 @@
                 <picture>
                     <source
                         srcset="./img/photographer-500.jpg 500w, ./img/photographer-260.jpg 260w,  ./img/photographer-375.jpg 375w"
-                       sizes="18vw" type="image/jpg">
+                        sizes="18vw" type="image/jpg">
                     <img class="section_project_img" src="./img/photographer-500.webp"
                         srcset="./img/photographer-500.webp 500w, ./img/photographer-260.webp 260w,  ./img/photographer-375.webp 375w"
                         sizes="18vw" alt="photo d'un photographe devant son objectif">
@@ -168,7 +169,7 @@
 
                 <picture>
                     <source srcset="./img/desktop-320.jpg 320w, ./img/desktop-260.jpg 260w" sizes="18vw"
-                    type="image/jpg">
+                        type="image/jpg">
                     <img class="section_projet_img" src="./img/desktop-320.webp"
                         srcset="./img/desktop-320.webp 320w, ./img/desktop-260.webp 260w" sizes="18vw"
                         alt="mise en scène d'un bureau créatif à quatres mains">

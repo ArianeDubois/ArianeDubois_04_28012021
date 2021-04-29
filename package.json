@@ -6,6 +6,7 @@
   "scripts": {
     "sass": "sass --watch ./scss/main.scss:./style.css --style compressed"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ArianeDubois/ArianeDubois_04_28012021.git"

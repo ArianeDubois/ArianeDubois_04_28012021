@@ -1,22 +1,27 @@
 html {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 62.5%; //10px
+
     @include small-screen {
-        font-size: 60%; 
+        font-size: 60%;
     }
 
     @include tablette {
-        font-size: 55%; 
+        font-size: 55%;
 
     }
 
     @include small-mobile {
-        font-size: 40%; 
+        font-size: 40%;
 
     }
 
 
+
+
 }
+
+
 
 // fonts
 $font-size-title: 2.8rem;
@@ -24,4 +29,3 @@ $font-size-standart: 1.6rem;
 $font-size-quote: 2.1rem;
 $font-size-subtitle: 1.9rem;
 $font-size-contact: 1.6rem;
-

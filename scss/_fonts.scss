@@ -15,12 +15,7 @@ html {
         font-size: 40%;
 
     }
-
-
-
-
 }
-
 
 
 // fonts
@@ -29,3 +24,88 @@ $font-size-standart: 1.6rem;
 $font-size-quote: 2.1rem;
 $font-size-subtitle: 1.9rem;
 $font-size-contact: 1.6rem;
+
+
+
+//et-line
+
+@font-face {
+    font-family: "et-line";
+    src: url(fonts/et-line.eot);
+    src: url(fonts/et-line.eot?#iefix) format('embedded-opentype'), url(fonts/et-line.woff) format('woff'), url(fonts/et-line.ttf) format('truetype'), url(fonts/et-line.svg#et-line) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+
+.et-icon-browser,
+.et-icon-edit,
+.et-icon-presentation {
+    font-family: "et-line";
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inline-block
+}
+
+.et-icon-browser:before {
+    content: "\e00c"
+}
+
+
+.et-icon-presentation:before {
+    content: "\e00e"
+}
+
+.et-icon-edit:before {
+    content: "\e01c"
+}
+
+//font-awesome 
+
+@font-face {
+    font-family: "Font Awesome 5 Brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: block;
+    src: url(fonts/fa-brands-400.eot);
+    src: url(fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"), url(fonts/fa-brands-400.woff2) format("woff2"), url(fonts/fa-brands-400.woff) format("woff"), url(fonts/fa-brands-400.ttf) format("truetype"), url(fonts/fa-brands-400.svg#fontawesome) format("svg")
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400
+}
+
+.far {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+}
+
+
+.fa,
+.fas {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+.fa-facebook-f:before {
+    content: "\f39e";
+}
+
+.fa-twitter:before {
+    content: "\f099";
+}
+
+.fa-dribbble:before {
+    content: "\f17d";
+}
+
+.fa-instagram-square:before {
+    content: "\e055";
+}

@@ -12,9 +12,7 @@ a {
     &:focus{
       color: $main-color;
     }
-    &:hover{
-        //color: #ffff;
-      }
+
 }
 
 header {
@@ -65,7 +63,7 @@ header {
    // background-color: $main-color;
    border: 1px solid $second-color;
     box-shadow: 1px 1px 2px 1px rgb(196, 195, 195);
-    padding: 10px 15px 10px 15px;
+    padding: 6px 10px 6px 10px;
     border-radius: 2em;
   
 }
@@ -80,6 +78,7 @@ header {
 footer {
     // background-color: lighten($main-color, 15%);
     background-color: $main-color;
+ 
 
     box-shadow: 1px 1px 2px 1px rgb(196, 195, 195);
     color: black;
@@ -106,7 +105,7 @@ footer {
 
         &_bloc {
             flex-direction: column;
-            margin: 15px;
+            margin: 10px 2vw 10px 2vw;
             &:hover{
                 color: #ffff;
               }

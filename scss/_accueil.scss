@@ -3,9 +3,10 @@
     background-repeat: no-repeat;
     //  background: url("../img/la-chouette-agence-banniere.jpg"), no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: bottom 25vh right 0px;
-    min-height: 32vmax;
+    background-position: center;
+
+    background-attachment: scroll;
+    min-height: 32vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -16,11 +17,13 @@
     color: $second-color;
     filter: contrast(1.1) brightness(1.5);
 
-    @include tablette {
-        background-attachment: scroll;
-        background-position: center;
-        min-height: 40vmax;
+    @include small-screen {
+        min-height: 45vw;
         margin-top: 35px;
+    }
+
+    @include mobile {
+        min-height: 95vw;
     }
 
     &_card {
@@ -53,6 +56,8 @@
         position: absolute;
         top: 0;
         left: 0;
+        bottom: 0;
+        right: 0;
         background-color: $main-color;
         mix-blend-mode: hue;
     }
@@ -115,6 +120,7 @@
 .section_presentation_categories_illustrations {
     width: 30%;
 
+
     @include mobile {
         width: 90%;
     }
@@ -124,6 +130,9 @@
         color: $second-color;
         margin-bottom: 30px;
         margin-top: 30px;
+        @include mobile {
+            font-size: 8rem;;
+        }
 
     }
 
@@ -136,7 +145,7 @@
 
     &_text {
         font-size: $font-size-standart;
-        text-align: left;
+        text-align: center;
     }
 
 }
@@ -211,13 +220,8 @@
     @include margin-screen;
 
     @include small-screen {
-        @include margin-tablette;
-    }
-
-    @include mobile {
         @include margin-mobile
     }
-
 
     &_title {
         text-align: center;
@@ -246,19 +250,16 @@
     }
 
     figure {
-        margin: 3vw;
-        width: 18vw; // size image
+        margin: 30px;
+        max-width: 40%; // size image
 
         @include small-screen {
-            margin: 5vw;
-            width: 30vw;
-
+            max-width: 30%;
         }
 
         @include mobile {
-            margin: 3vw;
-            width: 100%;
 
+            max-width: 100%;
         }
 
         img {

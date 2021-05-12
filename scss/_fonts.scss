@@ -11,6 +11,11 @@ html {
 
     }
 
+    @include mobile {
+        font-size: 45%;
+
+    }
+
     @include small-mobile {
         font-size: 40%;
 
